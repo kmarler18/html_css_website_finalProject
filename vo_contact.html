@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Kyle Marler's Voice Over contact page
+    Author: Kyle Marler
+    Date: 4.16.22
+
+    Filename: vo_contact.html
+    -->
+
+    <meta charset="utf-8" />
+
+    <meta name="keywords" content="contact, kyle, marler, voice over, american accent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Kyle</title>
+    <link href="css/vo_flex.css" rel="stylesheet" />
+    <link href="css/vo_style1.css" rel="stylesheet" />
+    <link href="css/vo_navicon.css" rel="stylesheet" />
+    <link href="css/vo_forms.css" rel="stylesheet" />
+
+    <!--
+    I used the script from Tutorial 7 to intercept the data before it got
+    to the fake server to display a message that the data was received. 
+    -->
+    <script src="scripts/vo_formsubmit.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/banner.png" alt="Kyle and friends" id="banner" />
+        <nav>
+            <img src="images/navicon.png" alt="" id="navicon" />
+
+            <ul>
+                <li><a href="vo_home.html">Home</a></li>
+                <li><a href="vo_about.html">About</a></li>
+                <li><a href="vo_portfolio.html">Portfolio</a></li>
+                <li><a href="vo_reviews.html">Reviews</a></li>
+                <li><a href="vo_pricing.html">Pricing</a></li>
+                <li><a href="vo_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Kyle</h1>
+
+        <p>Please fill out the form below to get started on a voice project.</p>
+
+        <p>Fields marked with an asterisk (*) are required.</p>
+
+        <form id="contact" action="http://www.kylewebsite/kyleserver/form" method="post">
+            <fieldset id="custInfo">
+                <legend>Customer Information</legend>
+
+                <div class="formRow">
+                    <label for="firstName">First Name*</label>
+                    <input name="firstName" id="firstName" type="text" 
+                    placeholder="Bruce" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="lastName">Last Name*</label>
+                    <input name="lastName" id="lastName" type="text" 
+                    placeholder="Wayne" required />
+                </div>
+
+                <div class="formRow">
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" id="phone" type="tel" placeholder="555-555-5555" 
+                    pattern="^\d{3}-\d{3}-\d{4}$" />
+                </div>
+
+                <div class="formRow">
+                    <label for="email">Email*</label>
+                    <input name="email" id="email" type="email" 
+                    pattern="(\w\.?)+@[\w\.-]+\.\w{2,}" required />
+                </div>
+            </fieldset>
+
+            <fieldset id="projectInfo">
+                <legend>Project Information</legend>
+
+                <div class="formRow">
+                    <label>Project Type</label>
+                    <fieldset class="optGroup">
+                        <label for="socialAd">Social Media Ad</label>
+                        <input name="projectType" value="socialAd" id="socialAd" type="radio" />
+                        <label for="eLearn">eLearn</label>
+                        <input name="projectType" value="eLearn" id="eLearn" type="radio" />
+                        <label for="training">Corporate Training</label>
+                        <input name="projectType" value="training" id="training" type="radio" />
+                        <label for="phoneSystem">Phone System</label>
+                        <input name="projectType" value="phoneSystem" id="phoneSystem" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label for="wordCount">Word Count of Script*</label>
+                    <input name="wordCount" id="wordCount" type="number" value="50" 
+                    step="1" min="0" max="20000" required />
+                </div>
+
+                <div class="formRow">
+                    <label>Preferred deliverable format</label>
+                    <fieldset class="optGroup">
+                        <label for="mp3">MP3</label>
+                        <input name="fileFormat" value="mp3" id="mp3" type="radio" />
+                        <label for="wav">WAV</label>
+                        <input name="fileFormat" value="wav" id="wav" type="radio" />
+                        <label for="ogg">OGG</label>
+                        <input name="fileFormat" value="ogg" id="ogg" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label for="singingProject">Please check the box if this is a singing project</label>
+                    <input name="singingProject" id="singingProject" value="yes" type="checkbox" />
+                </div>
+
+                <div class="formRow">
+                    <label for="comments">Please provide any additional project details.</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset All Fields" />
+             </div>
+        </form>
+    </main>
+
+    <footer>
+        Kyle Marler Voice Over &#8226; Based in Dayton, OH &#8226; Worldwide Clientele &#8226; 
+        <a href="mailto:kyle.jacob.marler@gmail.com">kyle.jacob.marler@gmail.com</a> &#8226;
+        <a href="tel:+19374743328">937.474.3328</a>
+    </footer>
+
+</body>
+</html>

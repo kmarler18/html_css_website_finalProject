@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 
+    Style Sheet for pricing table on the vo_pricing page. 
+    Author: Kyle Marler
+    Date: 4.20.22
+
+    Filename: vo_table.css
+*/
+
+main {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(81, 80, 80);
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    table-layout: fixed;
+}
+
+table th, table td {
+    border: 1px solid rgb(81, 80, 80);
+    word-wrap: break-word;
+    text-align: center;
+}
+
+table td {
+    height: 20px;
+}
+
+table th {
+    text-align: center;
+    height: 50px;
+    background-color: rgb(219, 232, 212);
+}
+
+tr.empty {
+    color: transparent;
+}
+
+td:not(tr.empty > td) {
+    background-color: rgb(237, 235, 206);
+}
+
+caption {
+    font-size: 0.8em;
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+
+
+

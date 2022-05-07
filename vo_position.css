@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* 
+    Style Sheet for positional layout on vo_about page.
+    Author: Kyle Marler
+    Date: 4.27.22
+
+    Filename: vo_position.css
+*/
+
+main#unique {
+    position: relative;
+    overflow: auto;
+    height: 500px;
+}
+
+figure {
+    width: 30%;
+    min-width: 300px;
+}
+
+figure#surfing {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+}
+
+article#unique img {
+    width: 100%;
+}
+
+aside#intro {
+    position: absolute;
+    top: 75px;
+    left: 45%;
+}
+
+aside#middle {
+    position: absolute;
+    left: 10%;
+    top: 510px;
+    width: 45%;
+}
+
+figure#jumping {
+    position: absolute;
+    left: 60%;
+    top: 480px;
+}
+
+aside#end {
+    position: absolute;
+    left: 45%;
+    top: 775px;
+}
+
+figure#singing {
+    position: absolute;
+    left: 10%;
+    top: 750px;
+}
+
+/* Displays nav as a flexbox */
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+ }
+ 
+nav ul li {
+    flex: 1 1 auto;
+ }
+
+ /* Media query for displays smaller than 1000px */
+
+ @media only screen and (max-width: 1000px) {
+
+    main#unique {
+        position: static;
+        overflow: visible;
+        height: auto;
+    }
+
+    article#unique div {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    article#unique > div > figure {
+        width: auto;
+        min-width: 0;
+        flex: 1 1 200px;
+    }
+    
+    article#unique > div > aside {
+        flex: 1 1 200px;
+    }
+
+    figure#surfing {
+        position: static;
+    }
+
+    aside#intro {
+        position: static;
+    }
+
+    aside#middle {
+        position: static;
+        width: auto;
+    }
+
+    figure#jumping {
+        position: static;
+    }
+
+    aside#end {
+        position: static;
+    }
+
+    figure#singing {
+        position: static;
+    }
+
+ }

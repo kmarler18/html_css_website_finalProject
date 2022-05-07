@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import url(vo_reset.css);
+
+/* 
+    Style Sheet for Kyle Marler Voice Over Website
+    Author: Kyle Marler
+    Date: 4.13.22
+
+    Filename: vo_style1.css
+*/
+
+/* Structural element styles */
+
+html {
+    height: 100%; 
+    background-color: white;
+}
+
+body {
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Lucida Sans Unicode', 'Palatino Linotype', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    background-color: white;
+    max-width: 1050px;
+    filter: drop-shadow(0px 0px 10px rgb(199, 199, 199))
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color:rgba(187, 199, 247, 0.9);
+}
+
+article {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+/* Audio Player Styles on homepage */
+
+audio {
+    filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Headshot img style */
+
+img#headshot {
+    margin-top: 25px;
+    width: 100%;
+    margin-left: 15px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 0px 10px rgb(199, 199, 199)); 
+}
+
+/* Styles for portfolio on both the home page and portfolio page */
+
+.portfolio div {
+    margin: 25px;
+}
+
+/* Demo Reel on Home Page styles */
+
+div#demoReel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 45px;
+    width: 100%;
+    background-color: rgb(219, 232, 212);
+}
+
+
+/* Stretch logo across width of the body */
+
+img#banner {
+    width: 100%;
+}
+
+/* Navigation and link styles */
+
+nav li {
+    text-align: center;
+}
+
+a, a:link, a:visited {
+    color: rgba(0, 0, 0, 1);
+}
+
+header a {
+    display: block;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    background: white;
+    filter: none;
+    font-size: 1em;
+    transition: background 1.5s, filter 1.5s, font-size 1.5s;
+}
+
+header a:hover {
+    background: rgba(187, 199, 247, 0.9);
+    filter: drop-shadow(0px 0px 15px black);
+    font-size: 1.2em;
+}
+
+/* Heading Styles */
+
+h1 {
+    width: 100%;
+    color:rgb(44, 45, 45);
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* ol style on home page */
+
+ol {
+    line-height: 1.5em;
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin: 10px;
+}
+
+/* Paragraph styles */
+
+p {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    line-height: 1.5em;
+}
+
+/* Styles for vo_about.html page */
+
+article#unique > div > figure img {
+    border-radius: 10%;
+    filter: drop-shadow(0px -5px 5px rgb(149, 148, 148));
+}
+
+figcaption {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+article#unique div {
+    margin: 40px;
+}
+
+article#unique aside {
+    margin: 20px;
+}
+
+
+/* Styles for vo_reviews page */
+
+img#kylestudio {
+    width: 65%;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0px -5px 5px rgb(149, 148, 148));
+}
+
+section#quotes div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+section#quotes div:nth-of-type(odd) {
+    background-color: rgb(219, 232, 212);
+}
+
+section#quotes div:nth-of-type(even) {
+    background-color: rgb(237, 235, 206);
+}
+
+blockquote {
+    quotes: "\201C" "\201D";
+}
+
+blockquote::before {
+    content: open-quote;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+section#quotes {
+    margin-top: 75px;
+}
+
+section#quotes div {
+    padding-left: 20px;
+    padding-right: 20px;
+}

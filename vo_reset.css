@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* 
+    Reset Style Sheet for the Kyle Marler Voice Over Website 
+    Author: Kyle Marler
+    Date: 4.12.22
+
+    Filename: reset.css
+*/
+
+/* Structural Styles */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+/* Typographic styles */
+
+article, aside, blockquote, body, div, figcaption, figure, 
+footer, h1, header, html, img, li, main, nav, ol, section, p, ul {
+    background: transparent;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* Remove underline style from previously visited links */
+
+a {
+    text-decoration: none;
+}
+
+/* Create a uniform line height across the entire document */
+
+body {
+    line-height: 1;
+}
+
+/* Ensure there are no default browser list styles applied */
+
+ul, ol {
+    list-style: none;
+    list-style-image: none;
+}

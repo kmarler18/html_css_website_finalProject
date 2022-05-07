@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 
+    Style Sheet for print styles for the home page
+    Author: Kyle Marler
+    Date: 4.25.22
+
+    Filename: vo_print.css
+*/
+
+/* Hidden objects */
+
+nav, footer, div#demoReel, iframe, .video p:nth-of-type(2) {
+    display: none;
+}
+
+/* Display url of portfolio vids */
+
+div::after {
+    content: "(" attr(id) ")";
+}
+
+/* Paragraph style for portfolio selections */
+
+.portfolio p {
+    font-weight: bold;
+}
+
+/* Page Box Styles */
+
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in; 
+}
+
+/* Typography Styles Section */
+
+h1 {
+    font-size: 16pt;
+}
+
+h1#portfolio {
+    page-break-before: always;
+}

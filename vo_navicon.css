@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 
+    Style Sheet for Nav Icon
+    Author: Kyle Marler
+    Date: 4.13.22
+*/
+
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+nav img {
+    display: none;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+    nav img {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav img:hover+ul, nav ul:hover {
+        display: block;
+    }
+
+    nav ul li {
+        text-align: left
+    }
+
+    a {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        transition: none;
+    }
+    
+    a:hover {
+        background: white;
+        filter: none;
+        font-size: 1em;
+    }
+}

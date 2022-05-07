@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* 
+    Flex styles for the Kyle Marler voiceover web site.
+    Author: Kyle Marler
+    Date: 4.13.22
+
+    Filename: vo_flex.css
+*/
+
+/* Flex Styles for Home Page */
+
+main#homepage {
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+main#homepage figure {
+    flex: 0.5 1 100px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article#about {
+    flex: 1 1 300px;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.portfolio > div {
+    flex: 1 1 200px;
+}
+
+/* Display navigation menu as a flexbox for all pages */
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+ }
+ 
+nav ul li {
+    flex: 1 1 auto;
+ }
+
+ /* Form flexbox styles for vo_contact.html */
+
+form {
+    display: flex;
+    flex-flow: row wrap
+}
+
+form > fieldset {
+    flex: 1 1 250px;
+}
+
+/* Flexbox for vo_about.html page */
+
+article#unique div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article#unique > div > figure {
+    flex: 1 1 200px;
+}
+
+article#unique > div > figure img {
+    width: 100%;
+}
+
+article#unique > div > aside {
+    flex: 1 1 200px;
+}
+
