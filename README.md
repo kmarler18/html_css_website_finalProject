@@ -1,8 +1,6 @@
 # html_css_website_finalProject
 For my HTML5 / CSS3 class, I was tasked with creating a website. I ended up creating one for my voice over business.
 
-The site can be viewed <a href="https://cisnook.sinclair.edu/kyle.marler/final_Project/vo_home.html" target="_blank">here</a>.
-
 I implemented many HTML features I learned throughout the course including a pricing table, a contact form and embedded YouTube videos for my portfolio.
 
 I also utilized various CSS techniques, including a flex box to responsively design my video portfolio, a print style sheet for my home page, and positioning properties to make the "about" page elements slightly offset and more visually interesting. 
