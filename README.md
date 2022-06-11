@@ -1,5 +1,7 @@
 # html_css_website_finalProject
-For my HTML5 / CSS3 class, I was tasked with creating a website. I ended up creating one for my voice over business.
+For my HTML5 / CSS3 class, I was tasked with creating a website. I created one for my voice over business.
+
+You can view the website <a href="https://kyle-marler.000webhostapp.com/index.html">here</a>.
 
 I implemented many HTML features I learned throughout the course including a pricing table, a contact form and embedded YouTube videos for my portfolio.
 
