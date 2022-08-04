@@ -3,7 +3,7 @@ For my HTML5 / CSS3 class, I was tasked with creating a website. I created one f
 
 You can view the website <a href="https://kyle-marler.000webhostapp.com/index.html" target="_blank">here</a>.
 
-I implemented many HTML features I learned throughout the course including a pricing table, a contact form and embedded YouTube videos for my portfolio.
+I implemented many HTML features I learned throughout the course including a pricing table, form elements and embedded YouTube videos for my portfolio.
 
 I also utilized various CSS techniques, including a flex box to responsively design my video portfolio, a print style sheet for my home page, and positioning properties to make the "about" page elements slightly offset and more visually interesting. 
 
