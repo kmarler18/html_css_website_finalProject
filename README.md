@@ -1,7 +1,7 @@
 # html_css_website_finalProject
 For my HTML5 / CSS3 class, I was tasked with creating a website. I created one for my voice over business.
 
-You can view the website <a href="https://kyle-marler.000webhostapp.com/index.html" target="_blank">here</a>.
+You can view the website <a href="https://1350final.netlify.app/" target="_blank">here</a>.
 
 I implemented many HTML features I learned throughout the course including a pricing table, form elements and embedded YouTube videos for my portfolio.
 
